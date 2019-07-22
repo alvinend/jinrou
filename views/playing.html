@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Main Menu</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='playing.css'>
+	<script src="/socket.io/socket.io.js"></script>
+	
+	
+</head>
+
+<body>
+	<div class="chatRow">
+		<div class="chatHeader">
+			Chat Box
+		</div>
+		<div class="chatBody" id ="chatBody"></div>
+		<div class="chatFooter">
+			<input type="text" id="myText" >
+			<button type="button" id="sendo" >Send</button>
+		</div>
+	</div>
+	<div class="gameRow">
+		<div class="gameCol StatusBar">
+			<div class="Alive">
+				Alive<br>
+				<div id="aliveList">
+				</div>
+			</div>
+			<div class="Time" id="Time">
+				Night
+			</div>
+			<div class="Role" id="Yakuwari"></div>
+		</div>
+		<div class="gameCol voteList">
+			<h3>Vote</h3>
+			<div id="voteList">
+				<span><button>orang1</button></span>
+				<span><button>orang1</button></span>
+				<span><button>orang1</button></span>
+				<span><button>orang1</button></span>
+			</div>
+ 		</div>
+ 		<div class="gameCol StatusBar">
+
+			<div class="SpList">
+				<span id="spAbility">Special Abilty</span>
+				<div id="SpList"> 
+					TES
+				</div>
+			</div>
+
+			<div class="ingameLog" id="ingameLog">
+				In Game Log
+				Welcome to Jinrou Game
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<script src="script/playing/io.js"></script>
+</body>
+</html>

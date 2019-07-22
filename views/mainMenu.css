@@ -1,0 +1,60 @@
+body{
+    height: 100vh;
+    transition: all 0.5s;
+    overflow: hidden;
+    background: url(bg-night.png) no-repeat center center fixed;
+    background-size: cover;
+}   
+
+.title{
+    position: fixed;
+    width: 50%;
+    top: 10%;
+    left: 50%;
+    margin-left: -22vh;
+    font-weight: 1000;
+    font-size: 5rem;
+    color: aliceblue;
+    transition: all 0.5s;
+}
+
+.title:hover{
+    width: 60%;
+    margin-left: -27vh;
+}
+
+.playerCount{
+    position: fixed;
+    font-weight: 400;
+    font-size: 2rem;
+    color: aliceblue;
+    left: 54%;
+    top: 38%;
+    margin-left: -12rem
+}
+
+.mybutton{
+    position: fixed;
+    width: 20vh;
+    height: 10vh;
+    border: 5px solid #fff;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+    top:50%
+}
+.buttonReady{
+    left: 50%;
+    margin-left : -25vh
+}
+
+.buttonRules{
+    left:50%;
+}
+
+button:hover{
+    color: aliceblue;
+    background-color: #cc0909;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Main Menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='mainMenu.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    
+</head>
+
+<body>
+    <div class="title" id="testbg"><img style="width: 50%" src="logo.png" alt="logo"></div>
+    <span class="playerCount">Player Count: <span id="playerCount" ></span></span>
+    <button type="button" id="ready" class="mybutton buttonReady">Ready</button>
+    <button type="button" id="rules" class="mybutton buttonRules" data-toggle="modal" data-target="#myModal">Rules</button>
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ルール</h4>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>プレイや数は8人です</li>
+                <li>村人6人、人狼１人と占い師が１人</li>
+                <li>このゲーム２フェーズがあります（NightとDay)</li>
+                <li>Nightフェーズが人狼と占い師、それぞれ特別な能力を使う時</li>
+                <li>Dayフェーズが全員話し合って死刑誰にするか決めるフェーズ</li>
+                <li>ゲームがNightから始まる</li>
+                <li>全員が行動を済ました時点でフェーズが変わる</li>
+                <li>人狼勝ち条件：全員を殺す</li>
+                <li>村人と占い師勝ち条件：人狼を見つけ死刑する</li>
+                <li>死んだら負け</li>
+            </ul>
+            以上
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="script/mainMenu/main.js"></script>
+    <script src="script/mainMenu/io.js"></script>
+</body>
+</html>
